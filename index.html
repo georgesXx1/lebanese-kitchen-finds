@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebanese Home - Xiaomi 5-in-1 Electric Spin Scrubber</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4eff8 100%);
+        }
+        .product-shadow {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+        .review-card {
+            transition: all 0.3s ease;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Xiaomi_logo_%282021-%29.svg" alt="Xiaomi Logo">
+                        <span class="ml-2 text-xl font-bold text-blue-600">Lebanese Kitchen Finds</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#features" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Features</a>
+                    <a href="#reviews" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Reviews</a>
+                    <a href="#contact" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                    <a href="#order" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Order Now</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Features</a>
+                <a href="#reviews" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Reviews</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Contact</a>
+                <a href="#order" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg" data-aos="fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+                        Powerful 5-in-1 Electric <span class="text-blue-600">Spin Scrubber</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        The ultimate cleaning tool for your home. Powerful, versatile, and effortless cleaning with 5 different brush heads for every surface.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#order" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-lg text-center pulse-animation">
+                            Order Now
+                        </a>
+                        <a href="#features" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg text-center">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="mt-8 flex items-center space-x-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-truck text-green-500 mr-2"></i>
+                            <span class="text-sm">2-4 Working Days Delivery</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-money-bill-wave text-green-500 mr-2"></i>
+                            <span class="text-sm">Cash on Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S293c7fde443d48f7b65a6af039d0777ap.jpg_220x220q75.jpg_.avif" alt="Xiaomi Electric Spin Scrubber" class="w-full max-w-md product-shadow rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Spin Scrubber?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Transform your cleaning routine with this powerful and versatile tool</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-broom text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">5-in-1 Multi-Functional</h3>
+                    <p class="text-gray-600 text-center">
+                        Comes with 5 different brush heads for all cleaning needs: flat brush, round brush, sponge, angle brush, and steel wool pad.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Powerful Motor</h3>
+                    <p class="text-gray-600 text-center">
+                        360° rotation at 220 RPM with strong torque to remove stubborn stains without damaging surfaces.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-battery-full text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Long Battery Life</h3>
+                    <p class="text-gray-600 text-center">
+                        2000mAh lithium battery provides up to 90 minutes of continuous use. USB rechargeable.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-tint text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Waterproof Design</h3>
+                    <p class="text-gray-600 text-center">
+                        IPX7 waterproof rating lets you clean bathrooms, kitchens, and outdoor areas without worry.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-weight text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Lightweight & Ergonomic</h3>
+                    <p class="text-gray-600 text-center">
+                        Only 500g with comfortable non-slip grip reduces hand fatigue during extended cleaning sessions.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="feature-icon rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-money-bill-wave text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Best Value in Lebanon</h3>
+                    <p class="text-gray-600 text-center">
+                        Premium quality at an affordable price with local warranty and support. Save time and effort!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Demo Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">See It In Action</h2>
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
+                        <iframe class="w-full h-64 md:h-96" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Xiaomi Spin Scrubber Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Where Can You Use It?</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Bathroom tiles, grout, and shower glass</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Kitchen sinks, stovetops, and backsplashes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Car interiors, wheels, and exterior cleaning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Outdoor furniture and patio cleaning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Pet areas and hard-to-reach corners</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-info-circle text-blue-500"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm text-blue-700">
+                                    <strong>Pro Tip:</strong> For tough stains, apply your favorite cleaner and let it sit for 2-3 minutes before scrubbing. The rotating action will do the hard work for you!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Real reviews from Lebanese homeowners who transformed their cleaning</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="review-card bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Nour H. – Beirut</p>
+                            <div class="flex space-x-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Cleans way better than I expected. Fast delivery too. Worth the price."
+                    </p>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Jad A. – Saida</p>
+                            <div class="flex space-x-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="far fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Good product, makes cleaning the kitchen way easier. Would recommend."
+                    </p>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Maya K. – Jounieh</p>
+                            <div class="flex space-x-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "wsol 3al wa2et w ktir moufid he lproduct ! "
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#order" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                    Rated 4.8/5 by 30 Happy Customers
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-16 bg-blue-600 text-white" data-aos="fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Cleaning?</h2>
+                    <p class="text-lg mb-8 opacity-90">
+                        Order your Xiaomi 5-in-1 Electric Spin Scrubber today and enjoy:
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-3"></i>
+                            <span>Free delivery in 2-4 working days</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-3"></i>
+                            <span>Cash on delivery available nationwide</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-3"></i>
+                            <span>5 brush heads included</span>
+                        </li>
+                    </ul>
+                    <div class="bg-blue-700 p-4 rounded-lg inline-block">
+                        <p class="text-xl font-bold">High Quality Spin Scrubber</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white rounded-lg p-8 text-gray-800">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Order Now</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="address" class="block text-sm font-medium text-gray-700 mb-1">Delivery Address</label>
+                                <textarea id="address" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label for="quantity" class="block text-sm font-medium text-gray-700 mb-1">Quantity</label>
+                                <select id="quantity" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5+ (Contact us for bulk)</option>
+                                </select>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-4 text-center">
+                                <i class="fas fa-info-circle mr-1"></i> We only accept cash on delivery
+                            </p>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-bold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Confirm Order
+                            </button>
+                        </form>
+                        <p class="mt-4 text-center text-sm text-gray-600">
+                            Or order via WhatsApp: 
+                            <a href="https://wa.me/96176129184" class="text-blue-600 font-medium">+961 76 129 184</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
+            
+            <div class="space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(1)">
+                        <span class="text-lg font-medium text-gray-900">How fast is delivery in Lebanon?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300" id="faq-icon-1"></i>
+                    </button>
+                    <div class="mt-4 hidden" id="faq-content-1">
+                        <p class="text-gray-600">
+                            We offer delivery across Lebanon in:
+                            <br>- All areas: 2-4 working days
+                            <br><br>You'll receive an SMS with tracking information once your order ships.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(2)">
+                        <span class="text-lg font-medium text-gray-900">Is cash on delivery available everywhere?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300" id="faq-icon-2"></i>
+                    </button>
+                    <div class="mt-4 hidden" id="faq-content-2">
+                        <p class="text-gray-600">
+                            Yes! We offer cash on delivery (COD) service across all of Lebanon. There are no extra fees for COD - you only pay the product price upon delivery.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(3)">
+                        <span class="text-lg font-medium text-gray-900">What's included in the box?</span>
+                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300" id="faq-icon-3"></i>
+                    </button>
+                    <div class="mt-4 hidden" id="faq-content-3">
+                        <p class="text-gray-600">
+                            Your package includes:
+                            <br>- 1 Xiaomi electric spin scrubber body
+                            <br>- 5 brush heads (flat, round, sponge, angle, steel wool)
+                            <br>- USB charging cable
+                            <br>- User manual (English/Arabic)
+                            <br>- Warranty card
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Have Questions?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We're here to help! Contact us through any of these channels</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- TikTok -->
+                <div class="bg-black p-8 rounded-xl text-center w-full md:w-auto">
+                    <div class="bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-tiktok text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">TikTok</h3>
+                    <p class="text-gray-300 mb-4">
+                        Follow us for cleaning tips and product demos
+                    </p>
+                    <a href="https://www.tiktok.com/@lebanese_tiktok_f?is_from_webapp=1&sender_device=pc" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-black hover:bg-gray-800">
+                        Follow Us
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- WhatsApp -->
+                <div class="bg-green-50 p-8 rounded-xl text-center w-full md:w-auto">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-whatsapp text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">WhatsApp</h3>
+                    <p class="text-gray-600 mb-4">
+                        Fastest response time (usually within minutes)
+                    </p>
+                    <a href="https://wa.me/96176129184" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
+                        Chat Now
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Phone -->
+                <div class="bg-blue-50 p-8 rounded-xl text-center w-full md:w-auto">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-phone-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Phone Call</h3>
+                    <p class="text-gray-600 mb-4">
+                        Available 10AM-6PM, Monday to Thursday
+                    </p>
+                    <a href="tel:+96176129184" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                        Call 76 129 184
+                        <i class="fas fa-phone-alt ml-2"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Lebanese Kitchen Finds</h3>
+                    <p class="text-gray-400">
+                        Bringing you the best kitchen solutions in Lebanon. 2-4 working days delivery, cash on delivery, and local warranty.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-white">Reviews</a></li>
+                        <li><a href="#order" class="text-gray-400 hover:text-white">Order Now</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Return Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/96170123456" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@lebanese_tiktok_f?is_from_webapp=1&sender_device=pc" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <p class="text-gray-400">Payment Method:</p>
+                        <div class="flex space-x-2 mt-2">
+                            <i class="fas fa-money-bill-wave text-gray-400"></i>
+                            <span class="text-gray-400">Cash on Delivery Only</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 Lebanese Home. All rights reserved.</p>
+                <a href="#admin-login" class="text-gray-500 hover:text-white hidden" id="admin-link">Admin</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div id="admin-login-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-8 rounded-lg max-w-md w-full">
+            <h3 class="text-2xl font-bold mb-6 text-center">Admin Login</h3>
+            <form id="admin-form">
+                <div class="mb-4">
+                    <label for="admin-username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+                    <input type="text" id="admin-username" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div class="mb-6">
+                    <label for="admin-password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                    <input type="password" id="admin-password" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-bold hover:bg-blue-700">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Orders View Modal -->
+    <div id="orders-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-8 rounded-lg max-w-4xl w-full max-h-screen overflow-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Recent Orders</h3>
+                <button id="close-orders" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="orders-list" class="space-y-4">
+                <!-- Orders will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/96176129184" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // FAQ toggle function
+        function toggleFAQ(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('transform', 'rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('transform', 'rotate-180');
+            }
+        }
+
+        // Admin functionality
+        const adminLink = document.getElementById('admin-link');
+        const adminModal = document.getElementById('admin-login-modal');
+        const ordersModal = document.getElementById('orders-modal');
+        const adminForm = document.getElementById('admin-form');
+        const closeOrders = document.getElementById('close-orders');
+        
+        // Show admin link when pressing Ctrl+Alt+A
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.altKey && e.key === 'a') {
+                adminLink.classList.toggle('hidden');
+            }
+        });
+
+        // Admin login
+        adminForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('admin-username').value;
+            const password = document.getElementById('admin-password').value;
+            
+            // Basic hardcoded credentials for demo
+            if (username === 'admin' && password === 'lebanesekitchen') {
+                adminModal.classList.add('hidden');
+                ordersModal.classList.remove('hidden');
+                
+                // In a real app, you would fetch orders from your database here
+                // This is just a demo with sample data
+                const ordersList = document.getElementById('orders-list');
+                ordersList.innerHTML = `
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between">
+                            <div>
+                                <p class="font-bold">Order #1</p>
+                                <p>Name: John Doe</p>
+                                <p>Phone: 71 123 456</p>
+                                <p>Address: Beirut, Hamra</p>
+                                <p>Quantity: 2</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Today, 10:30 AM</p>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Pending</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between">
+                            <div>
+                                <p class="font-bold">Order #2</p>
+                                <p>Name: Sarah Smith</p>
+                                <p>Phone: 76 987 654</p>
+                                <p>Address: Jounieh, Main Street</p>
+                                <p>Quantity: 1</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Yesterday, 4:15 PM</p>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Shipped</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                alert('Invalid credentials');
+            }
+        });
+
+        closeOrders.addEventListener('click', () => {
+            ordersModal.classList.add('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
