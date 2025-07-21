@@ -381,9 +381,6 @@
                         <div id="order-success" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded">
                             <i class="fas fa-check-circle mr-2"></i> Order submitted successfully! We'll contact you shortly.
                         </div>
-                        <div id="order-error" class="hidden mt-4 p-4 bg-red-100 text-red-700 rounded">
-                            <i class="fas fa-exclamation-circle mr-2"></i> There was an error submitting your order. Please try again or contact us via WhatsApp.
-                        </div>
                         <p class="mt-4 text-center text-sm text-gray-600">
                             Or order via WhatsApp: 
                             <a href="https://wa.me/96176129184" class="text-blue-600 font-medium">+961 76 129 184</a>
@@ -736,46 +733,6 @@
             });
         });
 
-        // Order form submission
-        document.getElementById('order-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const form = this;
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const successMsg = document.getElementById('order-success');
-            const errorMsg = document.getElementById('order-error');
-            
-            // Disable button to prevent multiple submissions
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Processing...';
-            
-            // Prepare email parameters
-            const templateParams = {
-                to_email: 'mansourgeorges7499@outlook.com',
-                from_name: form.name.value,
-                from_phone: form.phone.value,
-                from_address: form.address.value,
-                quantity: form.quantity.value,
-                date: new Date().toLocaleString()
-            };
-
-            // Send email using EmailJS
-            emailjs.send('service_12345', 'template_12345', templateParams) // Replace with your EmailJS service ID and template ID
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    successMsg.classList.remove('hidden');
-                    errorMsg.classList.add('hidden');
-                    form.reset();
-                }, function(error) {
-                    console.log('FAILED...', error);
-                    errorMsg.classList.remove('hidden');
-                    successMsg.classList.add('hidden');
-                })
-                .finally(function() {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Confirm Order';
-                });
-        });
     </script>
 </body>
 </html>
